@@ -1,0 +1,173 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}	
+a{
+	text-decoration: none;
+}
+.indigo{
+	background-color: rgba(75,0,130,20%);
+}
+
+.border{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 3rem;
+}
+h4{
+	font-size: 300%;
+	color: rgba(65,0,130,80%);
+}
+
+/*title part*/
+header{
+	display: flex;
+	background-color: rgba(162,139,231,100%);
+	/*background: linear-gradient(to top, white, red);*/
+	width: 100%;
+	align-items: center;
+	flex-direction: column;
+	height: 12rem;
+	position:fixed;
+	z-index:2;
+}
+
+.links{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	width: 80%;
+	align-items: baseline;
+	margin: 1rem;
+}
+.links>a{color: white}
+.inline{
+	display: flex;
+	background-color: rgba(75,0,130,30%);
+	margin: 0 3% 2%;
+	width: 120%;
+	padding: 10px;
+	justify-content: center;
+	border-radius: 10px;
+	font-size: 150%;
+	border: 1px solid rgba(75,0,130,60%);
+	transition: all 300ms ease-in-out 100ms;
+}
+.inline:hover{
+	background-color: rgb(243, 237, 245);
+	transform: scale(1.2);
+	transform: translate(0,20px);
+}
+.title{
+	text-align: center;
+	font-size: 600%;
+	margin: 0;
+	color: rgba(75,0,130,80%);
+	line-height: 100%
+}
+/*End of Title part*/
+
+
+
+.body{
+	position: relative;
+	top: 11rem;
+	display: flex;
+	flex-direction: column;
+	margin: 2rem;
+}
+
+
+/*About him*/
+.abouthim{
+	display:flex;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+.about{
+	display: flex;
+	width: 60%;
+	flex-direction: column;
+	margin: 1%;
+}
+.aboutdescription{
+	font-size: 150%;
+	color: rgba(75,0,130,100%);
+}
+.positions{
+	font-size: 150%;
+	margin: 1% 2%;
+	color: rgba(75,0,130,100%);
+}
+img{
+	width: 35%;
+	height: 90%;
+	margin: 1%;
+}
+/*End About him*/
+
+
+
+/*Grid part*/
+.transta{
+	display: grid;
+	grid-template-rows: 40rem 40rem 4rem;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.font{
+	font-size: 150%;
+	color: rgba(75,0,130,100%);
+}
+.paddingcontent{
+	padding: 1%;
+	text-align: center;
+	margin:0;
+	border: 1px solid black;
+}
+.paddingcontent2{
+	padding: 1rem;
+	margin:0;
+	border: 1px solid black;
+	text-align: center;
+}
+.dist{
+	width: 120%
+}
+.transfers{
+	grid-area: 1 / 1 / span 1 / span 3;
+}
+.statistics{
+	grid-area: 1 / 4 / span 1/ span 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 5rem;
+}
+.honours{
+	grid-area: 2 / 1 / span 1 / span 2;
+    margin: 2% 5%;
+}
+.type{
+	font-size: 150%;
+	color: rgba(75,0,130,100%);
+	margin: 1%;
+}
+.skills{
+	grid-area: 2 / 3 / span 1/ span 3;
+}
+.video{
+	height: 27rem;
+	width: 48rem;
+}
+.thank{
+	grid-area: 3 / 2 / span 1/ span 3;
+	display: flex;
+	justify-content: center;
+	background-color: rgba(162,139,231,100%);
+	align-items: center;
+	font-size: 200%;
+	color: rgba(69, 13, 92,100%);
+	border-radius: 10px;
+}
